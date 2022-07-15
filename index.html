@@ -1,3 +1,62 @@
-<html>
- test code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senarthemis</title>
+    <style>
+        body{
+            background-color: #242424;
+            font-family: unset;
+        }
+        .shell-session{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        <code class="shell-session demo">arthemis_user ~ $ </code>
+    </pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        if (document.getElementsByClassName('demo').length > 0) {
+        var i = 0;
+        var txt = `
+        
+█████████████████╗   ██╗     █████╗██████╗██████████╗  ████████████╗   ████████████╗
+██╔════██╔════████╗  ██║    ██╔══████╔══██╚══██╔══██║  ████╔════████╗ ████████╔════╝
+████████████╗ ██╔██╗ ██║    █████████████╔╝  ██║  ████████████╗ ██╔████╔███████████╗
+╚════████╔══╝ ██║╚██╗██║    ██╔══████╔══██╗  ██║  ██╔══████╔══╝ ██║╚██╔╝████╚════██║
+████████████████║ ╚████║    ██║  ████║  ██║  ██║  ██║  ███████████║ ╚═╝ ███████████║
+╚══════╚══════╚═╝  ╚═══╝    ╚═╝  ╚═╚═╝  ╚═╝  ╚═╝  ╚═╝  ╚═╚══════╚═╝     ╚═╚═╚══════╝
+                                                                                    
+
+        
+                        senarthemis
+                        [Entry mode; press Ctrl+w to close window]
+
+                       ###sosial media account
+
+                        - https://github.com/senarthemis
+                        - https://instagram.com/senarthemis
+                        - green arthemis senju
+                        - senju arthemis`;
+        var speed = 6;
+
+        function typeItOut () {
+            if (i < txt.length) {
+            document.getElementsByClassName('demo')[0].innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeItOut, speed);
+            }
+        }
+
+        setTimeout(typeItOut, 1800);
+        }
+    </script>
+
+</body>
 </html>
